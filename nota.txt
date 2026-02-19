@@ -1,0 +1,31 @@
+Se cargan los requemimientos guardados en la carpeta: 
+
+    pip freeze > requirements.txt
+
+Para ejecutar el backend hay que activar el entorno virtual:
+
+    .\venv\Scripts\Activate.ps1
+
+Para Correc el Back-end en pytnon 
+
+    uvicorn main:app --reload
+
+Para entrar a FastAPI una vez arrancado el sistema entra:
+
+Navegador:
+            http://127.0.0.1:8000/docs
+
+La contraseña del usuario y clave es:
+NOta si se borra la base de datos para depurar para entrar se encesita generar los permisoscom;
+     
+     python crear_admin.py
+      
+      Para entrar se ingresa:
+      
+            Usuario: admin
+            Clave: admin123
+
+
+
+
+
