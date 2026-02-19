@@ -18,8 +18,9 @@ app = FastAPI(
 # Esto permite que tu Frontend (Vue) que correrá en el puerto 5173
 # pueda hablar con tu Backend (Python) en el puerto 8000.
 origins = [
-    "http://localhost:5173", # Puerto por defecto de Vite/Vue
-    "http://localhost:8080",
+    "http://localhost:5173",
+    "https://frontend-utxj.vercel.app",
+    "https://frontend-utxj-jijzlpl9d-carlos-ivan-s-projects.vercel.app", # Tu URL de Vercel
 ]
 
 app.add_middleware(
@@ -37,4 +38,5 @@ app.include_router(admin.router) # <--- Conectamos admin
 
 @app.get("/")
 def read_root():
+
     return {"mensaje": "API UTXJ operando correctamente"}
